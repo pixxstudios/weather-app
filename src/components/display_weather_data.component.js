@@ -4,6 +4,9 @@ export default class DisplayWeatherData extends Component{
 
   render(){
       return(
+      /* loop through each element in the weather_data array and
+      create a row for each city */
+
       this.props.weather_data.map( (data, index) => {
         return(
         <div key={index}>

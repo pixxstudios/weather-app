@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Generates the header for showing city, temp and condition
 export default class DisplayWeatherHeader extends Component{
   render(){
     return(
