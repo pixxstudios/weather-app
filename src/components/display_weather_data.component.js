@@ -9,7 +9,7 @@ export default class DisplayWeatherData extends Component{
 
       this.props.weather_data.map( (data, index) => {
         return(
-        <div key={index}>
+        <div key={index} className="animated pulse">
           <span className="city-name city-data">{data.name}</span>
           <span className="city-temp city-data">{data.temp}</span>
           <span className="city-main city-data">{data.main}</span>

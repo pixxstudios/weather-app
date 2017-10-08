@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './animate.css'
 import './App.css';
 import Container from './components/container.component';
 
