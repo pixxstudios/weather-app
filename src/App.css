@@ -26,3 +26,62 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.search-header{
+  margin-bottom: 20px;
+}
+
+.search-box{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  border:2px solid grey;
+  text-align: center;
+  color: orange;
+}
+
+.search-button{
+  margin-left: 20px;
+  height: 30px;
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #1c2c47;
+  color: white;
+}
+
+.display-weather-main{
+  width: 70%;
+  margin: 30px auto;
+}
+
+.city-header{
+  float: left;
+  border: 1px solid black;
+  margin-top: 1px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.city-data{
+  float: left;
+  border: 1px solid black;
+  margin-top: 1px;
+  padding: 5px;
+}
+
+.city-name{
+  font-size: 14px;
+  width: 30%;
+  clear: left;
+}
+
+.city-temp{
+  font-size: 14px;
+  width: 10%;
+}
+
+.city-main{
+  font-size: 14px;
+  width: 20%;
+}

@@ -1,18 +1,16 @@
-import API_KEY from '../config/config.js';
+import config from '../config/config.js';
 import $ from 'jquery';
-console.log($);
 
-let GetWeather = function(city, callback){
- $.ajax({
-   url : `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY.API_KEY}`,
-   type : "get",
-   dataType : "json",
-   success : dataLoaded
+let GetWeather = function(city){
+  return new Promise( function(resolve, reject){
+   $.ajax({
+     url : `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${config.API_KEY}`,
+     type : "get",
+     dataType : "json",
+     success : (data) => resolve(data),
+     error : (err) => reject(err)
+   })
  })
-
-function dataLoaded(data){
-    callback(data);
-}
 }
 
 export default GetWeather;
