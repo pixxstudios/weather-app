@@ -27,7 +27,6 @@ export default class Container extends Component{
   render(){
     return(
       <div className="display-weather-main">
-          <img src="http://files.softicons.com/download/web-icons/vector-stylish-weather-icons-by-bartosz-kaszubowski/png/64x64/sun.big.cloud.drizzle.png" alt=""/>
           <SearchCity updateWeatherData={this.updateWeatherData}/>
           <DisplayWeather weather_data = {this.state.weather_data}/>
       </div>
